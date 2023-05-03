@@ -1,96 +1,29 @@
+* {
+  margin: 0;
+}
+
 /*The author is not used to using bootstrap so she decided to manually code everything.*/
 body {
-  background-color: white;
-  color: #1e1e1e;;
+  background-color: white !important;
+  color: black !important; 
 }
 
 .dark-mode {
-  background-color: #1e1e1e;;
-  color: white;
+  background-color: #1e1e1e !important;
+  color: white !important;
 }
 
-/* navigation bar styles - sticky and dark green background */
-header {
-  background-color: white;
-  position: sticky;
-  top: 0;
-  z-index: 9;
-}
-
-/* nav bar buttons styles */
-nav a, .btn {
-  float: left;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 5px;
-  border-radius: 20px;
-  font-family: 'Poppins', sans-serif;
-  background-color: white;
-  color: #1e1e1e;
-}
-
-/* nav bar buttons link status styles */
-nav a:link {
-  background-color: #1e1e1e;
-  color: white;
-}
-
-/* nav bar buttons hover status styles */
-nav a:hover, .btn:hover {
-  background-color: #1e1e1e;
-  color: white;
-}
-
-/* nav bar logo visited status styles */
-nav a.logo-link:hover {
-  background-color: transparent;
-  opacity: 0.85;
-}
-
-/* adjusts placement and size of logo */
-nav img {
-  height: 45px;
-  width: auto;
-  background-repeat: no-repeat;
-  background-size: contain;
-  float: left;
-}
-
-/* sets up margin and padding of logo to 0 */
-nav a.logo-link { 
-  margin:0; 
-  padding:0; 
-}
-
-/* moves nav bar from left to right */
-ul.navsec { 
-  text-align:right; 
-  margin-bottom: 0;
-}
-
-/* sets up nav bar design and placement */
-nav li {
-  /**--overflow: hidden;--**/
-  list-style: none;
-  text-align: justify;
-  line-height: 1.5;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-nav img {
-  margin: 20px;
-}
-
-nav #theme-switcher { 
+#theme-switcher {
+  margin-top: 100px; 
   cursor: pointer;
-  width: 45px;
+  width: 50px;
   height: auto;
+  position: sticky;
+  overflow: hidden;
+  margin: 10px 10px;
 }
 
-nav #theme-switcher:hover { 
+#theme-switcher:hover { 
   opacity: 80%; 
 }
 
@@ -172,6 +105,16 @@ nav #theme-switcher:hover {
   opacity: 80%;
 }
 
+.bgcolor {
+  margin: auto;
+  width: 40% !important;
+  z-index: 10;
+  color: white;
+  background-color: rgba(255,255,255, 0.3);
+  padding: 15px;
+  border-radius: 15px;
+}
+
 /*different*/
 .tm-banner-section {
   display: -webkit-box;
@@ -220,4 +163,187 @@ nav #theme-switcher:hover {
   font-size: 1.5rem;
   font-weight: 300;
   max-width: 500px;
+}
+
+/*.footerstyle {
+  
+}*/
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  padding: 60px 30px;
+  transition: all ease-in-out 0.3s;
+  background: #fefefe;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+  border-radius: 18px;
+  border-bottom: 5px solid #fff;
+}
+
+.dark-mode .services .icon-box {
+  padding: 60px 30px;
+  transition: all ease-in-out 0.3s;
+  background: #1e1e1e;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+  border-radius: 18px;
+  border-bottom: 5px solid #1e1e1e;
+}
+
+.services .icon-box .icon {
+  width: 64px;
+  height: 64px;
+  background: #1e1e1e;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+}
+
+.dark-mode .services .icon-box .icon {
+  width: 64px;
+  height: 64px;
+  background: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+  color: #1e1e1e;
+}
+
+.services .icon-box .icon {
+  width: 64px;
+  height: 64px;
+  background: #1e1e1e;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+}
+
+.dark-mode .services .icon-box .icon {
+  width: 64px;
+  height: 64px;
+  background: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+  color: #1e1e1e;
+}
+
+.services .icon-box .icon i {
+  font-size: 28px;
+}
+
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon-box h4 a {
+  color: #1e1e1e;
+  transition: ease-in-out 0.3s;
+}
+
+.dark-mode .services .icon-box h4 a {
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-10px);
+  border-color: #1e1e1e;
+}
+
+.dark-mode .services .icon-box:hover {
+  transform: translateY(-10px);
+  border-color: white;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #8fffd6;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 75px;
+  height: 3px;
+  background: #1e1e1e;
+  bottom: 0;
+  left: 0;
+}
+
+.dark-mode .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 75px;
+  height: 3px;
+  background: white;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+  color: #1e1e1e;
+  font-size: 15px;
+}
+
+.dark-mode .section-title p {
+  margin-bottom: 0;
+  color: white;
+  font-size: 15px;
+}
+
+#bottom {
+  background-color: white;
+}
+
+.dark-mode #bottom {
+  background-color: #1e1e1e;
+}
+
+.blacklink {
+  color: black !important;
 }
